@@ -8,6 +8,5 @@ RUN apt update \
   && echo "deb http://nuitka.net/deb/stable/focal focal main" > /etc/apt/sources.list.d/nuitka.list \
   && apt update \
   && apt install -y nuitka \
+  && apt install -y python3-pip \
   && rm -rf /var/lib/apt/lists/*
-
-WORKDIR /srv
